@@ -1,0 +1,57 @@
+  #typewriter
+  {
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    margin-top: 16%;
+    animation: typewriter 2s steps(13) infinite alternate,
+      blink 1000ms steps(13) infinite normal;
+    border-right: 5px solid black;
+   }
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 70%;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: rgb(0, 0, 0);
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+   #typewriter
+    {
+   font-size: 11pt;
+   }
+   }
+
+
+
+   .one
+   {
+    width: 100%;
+    background: linear-gradient(
+        to right,rgb(0 0 0 /0.5),
+        rgb(0 0 0 /0)
+    ),url('../x2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+   }
+
+   .a{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+   }
+   .livre:hover .a{
+    opacity: 1;
+   }
+
